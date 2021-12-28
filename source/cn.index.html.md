@@ -7,16 +7,16 @@ code_clipboard: true
 
 meta:
   - name: description
-    content: Documentation for the ZT API
+    content: Documentation for the Coinbetter API
 ---
 
 # 介绍
 
-这是ZT交易所的开发者文档，提供了一系列简单易用的API接口，您可以通过它们获取行情数据、进行交易、管理订单等。
+这是Coinbetter交易所的开发者文档，提供了一系列简单易用的API接口，您可以通过它们获取行情数据、进行交易、管理订单等。
 
 ## 创建 API Key
 
-用户在**[ZT](https://www.ztbzh.net)**注册账号后，需要在【API管理】中创建一对API密钥。创建后会得到一组随机生成的`Access key（以下简称api key）`和`Secret key`。有了这组数据，就可以进行程序化的交易。一个ZT帐号最多可以创建5对密钥。
+用户在**[Coinbetter](https://www.coinbetter.com)**注册账号后，需要在【API管理】中创建一对API密钥。创建后会得到一组随机生成的`Access key（以下简称api key）`和`Secret key`。有了这组数据，就可以进行程序化的交易。一个Coinbetter帐号最多可以创建5对密钥。
 <aside class="notice">
 请不要泄露api key和secret key的信息，以免造成资产损失。建议用户绑定IP地址，每个key最多绑定5个IP，用英文逗号隔开。
 </aside>
@@ -27,7 +27,7 @@ meta:
 
 ## 服务器
 
-ZT服务器在东京运行，为了尽量减少API访问延迟，建议使用与东京通信顺畅的服务器。
+Coinbetter服务器在东京运行，为了尽量减少API访问延迟，建议使用与东京通信顺畅的服务器。
 
 # 接入说明
 
@@ -35,8 +35,7 @@ ZT服务器在东京运行，为了尽量减少API访问延迟，建议使用与
 
 请使用以下域名发出API请求:
 
-* [https://www.ztb.im](https://www.ztb.im)（海外域名）
-* [https://www.ztbzh.net](https://www.ztbzh.net)（大陆域名）
+* [https://www.coinbetter.com](https://www.coinbetter.com)
 
 ## 请求格式
 API接受GET或POST请求
@@ -1066,8 +1065,7 @@ func Sign(secretKey string, params url.Values) string {
 
 ### 接入URL
 
-* wss://www.ztb.im/ws (海外域名)
-* wss://www.ztbzh.net/ws (大陆域名)
+* wss://www.coinbetter.com/ws
 
 ### 请求格式
 

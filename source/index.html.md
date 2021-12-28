@@ -7,18 +7,18 @@ code_clipboard: true
 
 meta:
 
-- name: description content: Documentation for the ZT API
+- name: description content: Documentation for the Coinbetter API
 
 ---
 
 # Introduction
 
-This is the developer documentation, ZT provides a simple and easy-to-use API interface, through which you can obtain
+This is the developer documentation, Coinbetter provides a simple and easy-to-use API interface, through which you can obtain
 market data, conduct transactions, and manage orders.
 
 ## Create API Key
 
-After registering an account with **[ZT](https://www.ztb.im)**, the user needs to create a pair of API keys
+After registering an account with **[Coinbetter](https://www.coinbetter.com)**, the user needs to create a pair of API keys
 in [API management]. After the creation, a set of randomly generated `Access key (hereinafter referred to as api key) `
 and `Secret key` will be obtained. With this set of data, programmed transactions can be carried out. A single account
 can create up to 5 keys.
@@ -33,7 +33,7 @@ users use REST API to query account balance, currency transaction and order mana
 
 ## The Server
 
-ZT server runs in Tokyo. In order to minimize the API access delay, it is recommended to use a server with smooth
+Coinbetter server runs in Tokyo. In order to minimize the API access delay, it is recommended to use a server with smooth
 communication with Tokyo.
 
 # Guide
@@ -42,8 +42,7 @@ communication with Tokyo.
 
 Please make API requests with the following base urls:
 
-* [https://www.ztb.im](https://www.ztb.im) (for overseas users)
-* [https://www.ztbzh.net](https://www.ztbzh.net) (for mainland China users)
+* [https://www.coinbetter.com](https://www.coinbetter.com)
 
 ## Request Format
 
@@ -1079,8 +1078,7 @@ Frequency limit：10 times/s
 
 ### Access URL
 
-* wss://www.ztb.im/ws (for overseas users)
-* wss://www.ztbzh.net/ws (for mainland China users)
+* wss://www.coinbetter.com/ws
 
 ### Request format
 
