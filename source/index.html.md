@@ -51,10 +51,10 @@ The APIs accept GET, or POST request, as will be described in later sections
 * For a GET request, all parameters are path paremeters (query string)
 * For a POST request, all parameters(includes `api_key` and `sign`) are to be put in request body and set `content-type`
   to `application/x-www-form-urlencoded`.
-* All http requests' header must include field `X-SITE-ID`, and value is `1`.
+* All http requests' header must include field `X-SITE-ID`, and value is `151`, otherwise some errors may occur.
 
 <aside class="notice">
-All http requests' header must include field `X-SITE-ID`, and value is `1`
+All http requests' header must include field `X-SITE-ID`, and value is `151`
 </aside>
 
 ## Signature

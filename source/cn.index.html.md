@@ -42,10 +42,10 @@ API接受GET或POST请求
 
 * 对于 GET 请求，所有参数都是query参数。
 * 对于 POST 请求，所有参数（包括 `api_key` 和 `sign`）都将放在请求body中，并将 `content-type` 设置为 `application/x-www-form-urlencoded`。
-* 所有 http 请求的标头必须包含字段`X-SITE-ID`，值为`1`。
+* 所有 http 请求的header里必须包含字段`X-SITE-ID`，值为`151`，否则可能导致某些请求报错。
 
 <aside class="notice">
-所有 http 请求的标头必须包含字段`X-SITE-ID`，值为`1`。
+所有 http 请求的标头必须包含字段`X-SITE-ID`，值为`151`。
 </aside>
 
 ## 签名
